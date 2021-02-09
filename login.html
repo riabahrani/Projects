@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>login</title>
+    <link rel="stylesheet" href="login.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+    />
+   
+  </head>
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      background: url("images/login.png") no-repeat center center fixed;
+      background-size: cover;
+    }
+    .modal-content {
+      background-color: rgba(81,149,156,0.22);
+      opacity: 0.8;
+      padding: 0px 18px;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div class="modal-dialog text-center">
+      <div class="col-sm-9 main-section">
+        <div class="modal-content">
+          <div class="col-12 user-img">
+            <img src="images/face.png" />
+          </div>
+
+          <div class="col-12 form-input">
+            <form id="login-form">
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="login-email"
+                  class="form-control"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  id="login-password"
+                  class="form-control"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <button type="submit" class="btn btn-success" style="color:blanchedalmond;font-size:18px;">Login</button>
+            </form>
+          </div>
+          <div class="col-12 forgot">
+            <a href="#" onclick="forgot_password();" ><b>Forgot Password?</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"> </script>
+  </body>
+</html>
